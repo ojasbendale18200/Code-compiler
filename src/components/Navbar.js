@@ -8,21 +8,21 @@ const Navbar = ({
   userTheme,
   setUserTheme,
   fontSize,
-  setFontSize
+  setFontSize,
 }) => {
   const languages = [
     { value: "c", label: "C" },
     { value: "cpp", label: "C++" },
     { value: "python", label: "Python" },
-    { value: "java", label: "Java" }
+    { value: "java", label: "Java" },
   ];
   const themes = [
     { value: "vs-dark", label: "Dark" },
-    { value: "light", label: "Light" }
+    { value: "light", label: "Light" },
   ];
   return (
     <div className="navbar">
-      <h1>Geeks Code Compiler</h1>
+      <h1>Code-Compiler</h1>
       <Select
         options={languages}
         value={userLang}
